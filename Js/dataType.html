@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DataType Demo</title>
+    
+    <script>
+    let intVariable = 0;
+    let longVariable = 33333333333;
+    let floatVariable = 1111.24;
+    let doubleVariable = 111111111111.122;
+    console.log(intVariable);
+    console.log(longVariable);
+    console.log(floatVariable);
+    console.log(doubleVariable);
+
+
+    let personName= 'Rexha';    // Both are same
+    console.log(personName);
+     personName = 'Rexha'; 
+    console.log(personName);
+
+    let ownership= "Rexha's";    // Use Different Strings   
+    console.log(ownership); 
+    ownership = 'Rexha"s'; 
+    console.log(ownership);
+
+    // let ownership= "Rexha"s";    // Error
+    // let ownership = 'Rexha's';  
+    
+    //Accessing characters in string  
+    // personName= 'Rexha'; 
+    // for (let i=0;i<personName.length;i++){
+    //   console.log(personName[i]);
+    // }
+
+    // Literals
+    let firstName="Kevin"; 
+    let lastName="Patrick";
+    console.log("Name: "+firstName+" "+lastName+"\n Email:"+firstName+"_"+lastName+"@abc.com");
+    console.log(`Name:${firstName} ${lastName}
+    Email: ${firstName}_${lastName}@abc.com`); 
+
+    // Objects
+    let mySmartPhone = { 
+    name: "iPhone", 
+    brand: "Apple", 
+    platform: "iOS", 
+    price: 50000 
+    };
+    
+    //Array
+    
+    let digits =[1,2,3,"four"]; 
+      for (let i=0;i<digits.length;i++){
+     console.log(digits[i]);
+     }
+
+
+
+
+
+    </script>
+</head>
+
+<body >
+  <h1>Numbers int long float double NaN</h1>
+  <h1>String double/Single Quotes</h1>
+</body>
+
+</html>

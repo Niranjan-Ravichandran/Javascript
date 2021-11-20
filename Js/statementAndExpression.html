@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Statement And Expression Demo</title>
+    
+    <script>
+    // If Statement
+    let num1 = 12; 
+    if (num1 % 2 == 0) { 
+        console.log("It is an even number!!"); 
+    } 
+    // If Else 
+ num1 = 1; 
+    if (num1 % 2 == 0) { 
+        console.log("It is an even number!!"); 
+    } 
+    else{ 
+        console.log("It is an odd number!!");      
+    } 
+
+    // If Else Ladder
+    let marks = 76;
+    if (marks >= 75) {
+        console.log("Very Good");
+    }
+    else if (marks < 75 && marks >= 50) {
+        console.log("Good");
+    }
+    else {
+        console.log("Needs Improvement");
+    }
+    // Switch Statement with break
+    var perfRating = 5;
+    switch (perfRating) {
+        case 5:
+            console.log("Very Poor");
+            break;
+        case 4:
+            console.log("Needs Improvement");
+            break;
+        case 3:
+            console.log("Met Expectations");
+            break;
+        case 2:
+            console.log("Commendable");
+            break;
+        case 1:
+            console.log("Outstanding");
+            break;
+        default:
+            console.log("Sorry!! Invalid Rating.");
+    }
+
+    // Switch Statement without break
+    var perfRating = 5; 
+    switch (perfRating) { 
+        case 5: 
+            console.log("Very Poor"); 
+           
+        case 4: 
+            console.log("Needs Improvement"); 
+           
+        case 3: 
+            console.log("Met Expectations"); 
+           
+        case 2: 
+            console.log("Commendable"); 
+          
+        case 1: 
+            console.log("Outstanding"); 
+          
+        default: 
+            console.log("Sorry!! Invalid Rating."); 
+    } 
+
+    // Switch with Default Statement
+    var perfRating = 15; 
+    switch (perfRating) { 
+        case 5: 
+            console.log("Very Poor"); 
+            break; 
+        case 4: 
+            console.log("Needs Improvement"); 
+            break; 
+        case 3: 
+            console.log("Met Expectations"); 
+            break; 
+        case 2: 
+            console.log("Commendable"); 
+            break; 
+        case 1: 
+            console.log("Outstanding"); 
+            break; 
+        default: 
+            console.log("Sorry!! Invalid Rating."); 
+    } 
+    // Ternary Operator
+    let workingHours = 9.20; 
+    let additionalHours = (workingHours > 9.15) ? "You have positive additional hours":"You have negative additional hours";
+    console.log(additionalHours); 
+
+    // Break
+    var counter = 0; 
+    for (var loop = 0; loop < 5; loop++) { 
+        if (loop == 3) 
+            break; 
+        counter++; 
+        console.log(counter); 
+    } 
+
+    // Continue
+    var counter = 0; 
+    for (var loop = 0; loop < 5; loop++) { 
+        if (loop == 3)
+            continue; 
+        counter++; 
+        console.log( loop ,counter);
+    } 
+
+
+    // For Loop
+    var counter = 0;
+    for (let loopVar = 0; loopVar < 5; loopVar++) {
+        counter = counter + 1;
+        console.log(counter);
+    } 
+
+    //while loop
+    var loopVar = 0;
+    while (loopVar < 5) {
+        console.log(loopVar);
+        loopVar++;
+    } 
+
+    // do while loop
+    var loopVar = 0;
+    do {
+        console.log(loopVar);
+        loopVar++;
+    } 
+    while (loopVar < 15); 
+
+
+
+    </script>
+</head>
+
+<body >
+  <h1>Statement And Expression</h1>
+</body>
+
+</html>

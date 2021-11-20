@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <script>
+        //-------------states of the object--------- 
+        let myCar = {
+            name: "Fiat",
+            model: "VXI",
+            color: "red",
+            numberOfGears: 5,
+            currentGear: 3,
+            currentSpeed: 45,
+            //-------------Behaviour of the object--------- 
+            accelerate: function (speedCounter) {
+                console.log("Accelerating speed by "+speedCounter)
+                this.currentSpeed = this.currentSpeed + speedCounter;
+                return this.currentSpeed;
+            },
+
+            brake: function (speedCounter) {
+                console.log("Reducing speed by "+speedCounter)
+                this.currentSpeed = this.currentSpeed - speedCounter;
+                return this.currentSpeed;
+            }
+        }
+
+
+        let myCar1 = {
+            name: "Fiat",
+            model: "VXI",
+            color: "red",
+            numberOfGears: 5,
+            currentGear: 3,
+            currentSpeed: 45,
+            //-------------Behaviour of the object--------- 
+            accelerate: function (speedCounter) {
+                console.log("Accelerating speed by "+speedCounter)
+                this.currentSpeed = this.currentSpeed + speedCounter;
+                return this.currentSpeed;
+            },
+
+            brake: function (speedCounter) {
+                console.log("Reducing speed by "+speedCounter)
+                this.currentSpeed = this.currentSpeed - speedCounter;
+                return this.currentSpeed;
+            }
+        }
+        console.log(myCar);
+       // console.log(myCar["model"]);
+        //console.log(myCar.currentSpeed);
+        // myCar.accelerate(50);
+        // console.log(myCar.currentSpeed);
+        // myCar.brake(30);
+        // console.log(myCar.currentSpeed);
+
+    </script>
+</head>
+
+<body>
+    <h1>Object Literal</h1>
+
+</body>
+
+</html>

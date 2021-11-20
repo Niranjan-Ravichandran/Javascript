@@ -1,0 +1,56 @@
+<html>
+
+<head>
+    <script>
+        function referenceErrorTryCatch() {
+            try {
+                console.log(a);
+                a = 10;
+            } catch (error) {
+                console.log("Error caught during executing referenceErrorTryCatch");
+                console.log(error);
+                console.log(error.name);
+                console.log(error.message);
+            }
+
+        }
+        function referenceError() {
+            console.log(a);
+            a = 10;
+        }
+      //  console.log("Before executing referenceError method");
+        // referenceError();
+       // referenceErrorTryCatch();
+       // console.log("After executing referenceError method");
+
+
+
+        function typeErrorTryCatch() {
+            try {
+                var a = 1;
+                console.log(a.toUpperCase());
+            } catch (error) {
+                console.log("Error caught during executing typeErrorTryCatch");
+                console.log(error);
+                console.log(error.name);
+                console.log(error.message);
+            }
+
+        }
+        function typeError() {
+            var a = 1;
+            console.log(a.toUpperCase());
+        }
+        console.log("Before executing typeError method");
+        //typeError();
+        typeErrorTryCatch();
+        console.log("After executing typeError method");
+    </script>
+</head>
+
+<body>
+    <h1>Exception Handling</h1>
+
+</body>
+
+</html>

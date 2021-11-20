@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <script>
+        function Car(name, model, color, numberOfGears, currentSpeed, currentGear) {
+            //-------------States of the object--------- 
+            this.name = name;
+            this.model = model;
+            this.color = color;
+            this.numberOfGears = numberOfGears;
+            this.currentSpeed = currentSpeed;
+            this.currentGear = currentGear;
+            //-------------Behaviour of the object--------- 
+            this.accelerate = function (speedCounter) {
+                console.log("Accelerating speed by "+speedCounter)
+                this.currentSpeed = this.currentSpeed + speedCounter;
+                return this.currentSpeed;
+            }
+            this.brake = function (speedCounter) {
+                console.log("Reducing speed by "+speedCounter)
+                this.currentSpeed = this.currentSpeed - speedCounter;
+                return this.currentSpeed;
+            }
+        }
+        var myCar = new Car("Hyundai", "Verna", "White", 4, 50, 3);
+        var myCar1 = new Car("Hyundai", "Verna", "White", 4, 50, 3);
+
+        console.log(myCar);
+        console.log(myCar["model"]);
+       // console.log(myCar.currentSpeed);
+        //myCar.accelerate(50);
+        //console.log(myCar.currentSpeed);
+        //myCar.brake(30);
+        //console.log(myCar.currentSpeed);
+
+    </script>
+</head>
+
+<body>
+    <h1>Object Using Function Constructor</h1>
+
+</body>
+
+</html>

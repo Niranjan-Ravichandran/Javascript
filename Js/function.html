@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Function Demo</title>
+    
+    <script>
+    // No Arg Function
+    function sayHelloWorld(){
+        console.log("Hello World");
+    }
+    sayHelloWorld();
+
+    //  Function with Parameters
+   // Function Declaration
+   function multiply(a,b){
+    return a*b;
+   }
+
+   // Function Invocation
+   var value = multiply(5,5);
+   console.log(value);
+
+
+   var value = multiply("5","4");
+   console.log(value);
+
+   var value = multiply(5,3,3,2,5,2,1);
+   console.log(value);
+
+   var value = multiply(5);
+   console.log(value);
+
+   // Function with default value
+   function multiplyWithDefaultValue(a,b=1){
+    return a*b;
+   }
+
+   var value = multiplyWithDefaultValue(5);
+   console.log(value);
+
+   var value = multiplyWithDefaultValue(5,6);
+   console.log(value);
+
+   // Function with Rest Parameter
+   function printlastNumber(a,b,...z){
+       console.log(z);
+   }
+   printlastNumber(2,2,6);
+   printlastNumber(2,2,6,5,6,9);
+
+    // Function with Rest Parameter
+   function infiniteMultiply(...z){
+    var result = 1;
+    for(let i=0;i<z.length;i++){
+        result*=z[i];
+    }
+    return result;
+   }
+   var value = infiniteMultiply(5,6,2,4);
+   console.log(value);
+
+   // Arrow Function
+    var sayHello = function () {
+        console.log("Welcome to JavaScript");
+    };
+    sayHello();
+
+    // Arrow Function using arrow notation.
+    var sayHello = () => {
+	console.log("Welcome to JavaScript");
+    };
+    sayHello();
+
+    // Arrow function multiple parameters
+
+    var multiplyArrow = (a,b) => {return a*b;}
+    var value = multiplyArrow(5,6);
+    console.log(value);
+
+    // Arrow function with one parameter
+
+    var incrementArrow = a => {return ++a};
+    var value = incrementArrow(6);
+    console.log(value);
+
+
+    </script>
+</head>
+
+<body >
+  <h1>Function</h1>
+</body>
+
+</html>

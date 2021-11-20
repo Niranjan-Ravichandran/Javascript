@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <form name="myForm" >
+        Name: <input type="text" name="fname">
+        <input type="button" id="validate" value="Submit" onclick="validateForm()">
+        <p id="errMsg" style="color: red;"></p>
+    </form>
+
+
+     
+
+    <script>
+
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            console.log(x);
+
+            if (x == "") {
+                document.getElementById("errMsg").innerHTML = "Empty";
+            }else{
+                document.getElementById("errMsg").innerHTML = "";
+            }
+        }
+
+        //add event listener
+        //document.getElementById("validate").addEventListener("click", function(){ alert("Hello World!"); })
+
+    </script>
+
+</body>
+
+</html>

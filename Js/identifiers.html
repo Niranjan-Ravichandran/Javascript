@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Identifier Demo</title>
+
+  <script>
+    //Let
+    // let name="William";  
+    // console.log("Welcome to JS course, Mr."+name);  
+
+    // let name = "Goth"; /* This will throw an error because the identifier  'name' has been already declared and we are redeclaring the variable, which is not allowed using the 'let' keyword. */ 
+    // console.log("Welcome to JS course, Mr."+name); 
+
+    //Const
+    // const pi =3.14;  
+    // console.log("The value of Pi is: "+pi);  
+
+    // pi= 3.141592; /* This will throw an error because the assignment to a const needs to be done at the time of declaration and it cannot be re-initialized. */ 
+    // console.log("The value of Pi is: "+pi); 
+
+    //var
+    var name = "William";  
+    console.log("Welcome to JS course, Mr." + name);  
+    var name = "Goth"; /* Here, even though we have redeclared the same identifier, it will not throw any error.*/ 
+    console.log("Welcome to JS course, Mr." + name); 
+
+
+    // Function Scope
+    function scope() {
+      if (true) {
+        let i = 1;
+        var j = 2;
+        const k = 3;
+        console.log("inside block" + i);
+        console.log("inside block" + j);
+        console.log("inside block" + k);
+      }
+     // console.log("outside block" + i);
+     // console.log("outside block" + j);
+      console.log("outside block" + k);
+    }
+    scope();
+       // console.log("outside let"+i);
+      //  console.log("outside var"+j);
+      //  console.log("outside const"+k);
+  </script>
+</head>
+
+<body>
+  <h1>Identifier let/const/var</h1>
+</body>
+
+</html>
