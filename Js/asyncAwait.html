@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>Async Await Function</h1>
+    <h1 id="demo"></h1>
+
+    <script>
+        
+        // async function hello() {
+        //     //Value will be wrapped in a resolved promise and returned
+        //     return "Hello Async hello";
+        // }
+        // hello().then(val => console.log(val)); // Hello Async
+        // async function hello() {
+        //     //Promise can be returned explicitly as well
+        //     return Promise.resolve("Hello Async hwllo");
+        // }
+        // hello().then(val => console.log(val)); // Hello Async
+
+
+        //returns a resolved promise value after asynchronous task completed 
+        function asyncJob(x) {
+            return new Promise(resolve => resolve(x + 1));
+        }
+        // we are linking series of three asynchronous tasks 
+        async function execAsyncJobs() {
+            /*await stops the execution of 'execAsyncJobs', until the promise returned by'asyncJob(0)', is resolved.  
+        res1 assigned with resolved promise’s result value */
+            const res1 = await asyncJob(0);
+            console.log(res1);
+
+            /* here,'asyncJob(res1)'is called, await stops execution of'execAsyncJobs', until the promise returned by'asyncJob(res1)' is resolved.  
+        res2 assigned with resolved promise’s result value  */
+            const res2 = await asyncJob(res1);
+            console.log(res2);
+            /* here, asyncJob(res2) is called, await stops execution of execAsyncJobs until the promise returned by asyncJob(res2) is resolved.  
+        res3 assigned with resolved promise’s result value */
+            const res3 = await asyncJob(res2);
+            console.log(res3);
+            return "Jobs completed";
+        }
+        execAsyncJobs().then(res => console.log(res));
+        let colors = ["red","orange"];
+        for(let color of colors){
+            console.log(color);
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+   <h1>CallBack Functions</h1>
+   <h1 id="demo"></h1>
+
+    <script>
+setInterval(myFunction, 2000);
+
+function myFunction() {
+  let d = new Date();
+  document.getElementById("demo").innerHTML=
+  d.getHours() + ":" +
+  d.getMinutes() + ":" +
+  d.getSeconds();
+}
+
+    </script>
+
+</body>
+
+</html>
